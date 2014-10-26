@@ -93,16 +93,15 @@ filename_training &lt;- &quot;pml-training.csv&quot;
 if (!file.exists(filename_training)){
   cat(&quot;File did not exist, downloading...\n&quot;)
   download.file(data_training_url, filename_training, method=&quot;curl&quot;)
-}</code></pre>
-<pre><code>## File did not exist, downloading...</code></pre>
-<pre class="r"><code>data_testing_url &lt;- &quot;https://d396qusza40orc.cloudfront.net/predmachlearn/pml-testing.csv&quot;
+}
+
+data_testing_url &lt;- &quot;https://d396qusza40orc.cloudfront.net/predmachlearn/pml-testing.csv&quot;
 filename_testing &lt;- &quot;pml-testing.csv&quot;
 
 if (!file.exists(filename_testing)){
   cat(&quot;File did not exist, downloading...\n&quot;)
   download.file(data_testing_url, filename_testing, method=&quot;curl&quot;)
 }</code></pre>
-<pre><code>## File did not exist, downloading...</code></pre>
 </div>
 <div id="read-and-clean-data" class="section level2">
 <h2>Read and clean data</h2>
@@ -193,9 +192,17 @@ fit &lt;- train(classe~.,
 ## magnet_forearm_z        9.59
 ## magnet_belt_x           9.38</code></pre>
 <p>The model is 0.9961% accurate on our validation set. Let’s use this model to do prediction using the testing set.</p>
-<pre class="r"><code>predict(fit, newdata=testing)</code></pre>
-<pre><code>##  [1] B A B A A E D B A A B C B A E E A B B B
-## Levels: A B C D E</code></pre>
+<pre class="r"><code>answers &lt;- predict(fit, newdata=testing)
+
+pml_write_files = function(x){
+  n = length(x)
+  for(i in 1:n){
+    filename = paste0(&quot;problem_id_&quot;,i,&quot;.txt&quot;)
+    write.table(x[i],file=filename,quote=FALSE,row.names=FALSE,col.names=FALSE)
+  }
+}
+
+pml_write_files(answers)</code></pre>
 </div>
 </div>
 
