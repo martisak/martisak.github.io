@@ -1,3 +1,10 @@
+---
+layout: post
+title:  "Washing machine ready detection"
+date:   2015-08-30 21:53:48
+categories: R PocketLab
+---
+
 # Washing apparatus ready detection (WARD)
 Martin Isaksson
 ## Abstract
