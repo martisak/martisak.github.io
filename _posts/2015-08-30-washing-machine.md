@@ -66,14 +66,94 @@ wash %>% head
 Rearrange and plot `x`,`y` and `z` components.
 
 
+{% highlight r %}
+wash2 <- wash %>% select(-matches("magnitude"), -threshold) %>% gather("axis", "value",-time) 
+
+ggplot(wash2, aes(x=time, y=value, color=axis)) +
+	geom_line() +
+	theme_classic() +
+	facet_grid(axis~.) +
+	scale_colour_brewer(palette = "Set1")
+{% endhighlight %}
+
+![plot of chunk mag_axis](http://martisak.github.io/2015-08-30-washing-machine/mag_axis-1.png) 
+
+Plot the magnitude
+
+
+{% highlight r %}
+ggplot(wash, aes(x=time, y=magnitude)) +
+	geom_line() +
+	theme_classic() 
+{% endhighlight %}
+
+![plot of chunk mag1](http://martisak.github.io/2015-08-30-washing-machine/mag1-1.png) 
+
+Plot the magnitude trend
+
+
+{% highlight r %}
+ggplot(wash, aes(x=time, y=magnitude_ema)) +
+	geom_line() +
+	theme_classic()
+{% endhighlight %}
 
 
 
+{% highlight text %}
+## Warning: Removed 19 rows containing missing values (geom_path).
+{% endhighlight %}
+
+![plot of chunk mag2](http://martisak.github.io/2015-08-30-washing-machine/mag2-1.png) 
+
+Plot the adjusted magnitude (removed magnitude trend).
+
+
+{% highlight r %}
+ggplot(wash, aes(x=time, y=magnitude_adj)) +
+	geom_line() +
+	theme_classic()
+{% endhighlight %}
 
 
 
+{% highlight text %}
+## Warning: Removed 19 rows containing missing values (geom_path).
+{% endhighlight %}
+
+![plot of chunk mag3](http://martisak.github.io/2015-08-30-washing-machine/mag3-1.png) 
+
+Plot the normalized absolute magnitude.
 
 
+{% highlight r %}
+ggplot(wash, aes(x=time, y=magnitude_abs)) + 
+	geom_line() +
+	theme_classic() 
+{% endhighlight %}
+
+
+
+{% highlight text %}
+## Warning: Removed 68 rows containing missing values (geom_path).
+{% endhighlight %}
+
+![plot of chunk mag4](http://martisak.github.io/2015-08-30-washing-machine/mag4-1.png) 
+
+Using zero as a threshold, plot on or off status.
+
+
+{% highlight r %}
+ggplot(wash, aes(x=time, y=threshold)) + geom_line()+ theme_classic() 
+{% endhighlight %}
+
+
+
+{% highlight text %}
+## Warning: Removed 68 rows containing missing values (geom_path).
+{% endhighlight %}
+
+![plot of chunk mag5](http://martisak.github.io/2015-08-30-washing-machine/mag5-1.png) 
 
 
 

@@ -13,8 +13,8 @@ local({
   a = commandArgs(TRUE)
   d = gsub('^_|[.][a-zA-Z]+$', '', a[1])
   knitr::opts_chunk$set(
-    fig.path   = sprintf('figure/%s/', d),
-    cache.path = sprintf('cache/%s/', d)
+    fig.path   = sprintf('/figure/%s/', d),
+    cache.path = sprintf('/cache/%s/', d)
   )
   # set where you want to host the figures (I store them in my Dropbox Public
   # folder, and you might prefer putting them in GIT)
@@ -23,8 +23,8 @@ local({
     # you may want to adapt them to your own website
     knitr::opts_chunk$set(fig.path = sprintf('%s/', gsub('^.+/', '', d)))
     knitr::opts_knit$set(
-      base.dir = '/',
-      base.url = 'http://martisak.github.io'
+      base.dir = '/Users/martisak/Documents/blog/',
+      base.url = 'http://martisak.github.io/'
     )
   }
   knitr::opts_knit$set(width = 70)
