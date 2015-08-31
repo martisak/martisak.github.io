@@ -9,7 +9,7 @@ title:               Martin's blog
 tagline:             'Why did you come here?'
 description:         'description goes here'
 url:                 http://martisak.github.io
-baseurl:             'http://martisak.github.io'
+baseurl:             ''
 paginate:            5
 
 # About/contact

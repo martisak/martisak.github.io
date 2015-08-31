@@ -76,7 +76,7 @@ ggplot(wash2, aes(x=time, y=value, color=axis)) +
 	scale_colour_brewer(palette = "Set1")
 {% endhighlight %}
 
-![plot of chunk mag_axis](''figure/source/2015-08-30-washing-machine/mag_axis-1.png) 
+![plot of chunk mag_axis](http://db.yihui.name/jekyll/2015-08-30-washing-machine/mag_axis-1.png) 
 
 Plot the magnitude
 
@@ -87,7 +87,7 @@ ggplot(wash, aes(x=time, y=magnitude)) +
 	theme_classic() 
 {% endhighlight %}
 
-![plot of chunk mag1](''figure/source/2015-08-30-washing-machine/mag1-1.png) 
+![plot of chunk mag1](http://db.yihui.name/jekyll/2015-08-30-washing-machine/mag1-1.png) 
 
 Plot the magnitude trend
 
@@ -104,7 +104,7 @@ ggplot(wash, aes(x=time, y=magnitude_ema)) +
 ## Warning: Removed 19 rows containing missing values (geom_path).
 {% endhighlight %}
 
-![plot of chunk mag2](''figure/source/2015-08-30-washing-machine/mag2-1.png) 
+![plot of chunk mag2](http://db.yihui.name/jekyll/2015-08-30-washing-machine/mag2-1.png) 
 
 Plot the adjusted magnitude (removed magnitude trend).
 
@@ -121,7 +121,7 @@ ggplot(wash, aes(x=time, y=magnitude_adj)) +
 ## Warning: Removed 19 rows containing missing values (geom_path).
 {% endhighlight %}
 
-![plot of chunk mag3](''figure/source/2015-08-30-washing-machine/mag3-1.png) 
+![plot of chunk mag3](http://db.yihui.name/jekyll/2015-08-30-washing-machine/mag3-1.png) 
 
 Plot the normalized absolute magnitude.
 
@@ -138,7 +138,7 @@ ggplot(wash, aes(x=time, y=magnitude_abs)) +
 ## Warning: Removed 68 rows containing missing values (geom_path).
 {% endhighlight %}
 
-![plot of chunk mag4](''figure/source/2015-08-30-washing-machine/mag4-1.png) 
+![plot of chunk mag4](http://db.yihui.name/jekyll/2015-08-30-washing-machine/mag4-1.png) 
 
 Using zero as a threshold, plot on or off status.
 
@@ -153,7 +153,7 @@ ggplot(wash, aes(x=time, y=threshold)) + geom_line()+ theme_classic()
 ## Warning: Removed 68 rows containing missing values (geom_path).
 {% endhighlight %}
 
-![plot of chunk mag5](''figure/source/2015-08-30-washing-machine/mag5-1.png) 
+![plot of chunk mag5](http://db.yihui.name/jekyll/2015-08-30-washing-machine/mag5-1.png) 
 
 
 
