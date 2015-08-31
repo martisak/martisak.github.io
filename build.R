@@ -1,6 +1,6 @@
 local({
   # fall back on '/' if baseurl is not specified
-  baseurl = servr:::jekyll_config('.', 'baseurl', '/')
+  baseurl = servr:::jekyll_config('.', 'baseurl', '')
   knitr::opts_knit$set(base.url = baseurl)
   # fall back on 'kramdown' if markdown engine is not specified
   markdown = servr:::jekyll_config('.', 'markdown', 'kramdown')
@@ -15,7 +15,7 @@ local({
   knitr::opts_chunk$set(
     fig.path   = sprintf('/figure/%s/', d),
     cache.path = sprintf('/cache/%s/', d),
-    base.url = 'http://martisak.github.io/'
+    fig.path = sprintf('%s/', gsub('^.+/', '', d))
   )
   # set where you want to host the figures (I store them in my Dropbox Public
   # folder, and you might prefer putting them in GIT)
