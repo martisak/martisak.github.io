@@ -6,7 +6,7 @@ relative_permalinks: true
 
 # Setup
 title:               Martin's blog
-tagline:             'Why did you come here?'
+tagline:             'I am what I am.'
 description:         'description goes here'
 url:                 http://martisak.github.io
 baseurl:             'http://martisak.github.io'
