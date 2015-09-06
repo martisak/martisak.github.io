@@ -34,6 +34,8 @@ So can the pie chart be used for anything? Sure, pie charts can be effective in 
 
 ## Get your membership card today!
 
+Make the world a better place, become a member today!
+
 <img src="/figure/card.png" style="width:60%" />
 
 ## References
