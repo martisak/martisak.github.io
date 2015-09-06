@@ -1,3 +1,10 @@
+---
+layout: post
+title:  "The F Pie Initiative"
+date:   2015-09-05 21:00:00
+categories: visualization pie-charts
+---
+
 Sometimes, when I come across a Powerpoint presentation with multiple multi-slice pie charts on a single slide my head hurts and I have to go air-poop for half-an-hour. Now I have decided to take action!
 
 # Introducing The F Pie Initiative
