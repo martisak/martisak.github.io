@@ -10,13 +10,26 @@ I am proud to present an intiative to end bad pie charts. Not all pie charts, ju
 
 ## So what's wrong with pie charts?
 
-It mumbles when it speaks.
+"Tables are clearly the best way to show exact numerical values,
+although the entries can also be arranged in semi-graphical form.
+Tables are preferable to graphics for many small data sets. **A
+table is nearly always better than a dumb pie chart; the only
+worse design than a pie chart is several of them**, for then the
+viewer is asked to compare quantities located in spatial disarray
+both within and between pies, as in this heavily encoded example
+from an atlas. Given their low data-density and failure to order
+numbers along a visual dimension, pie charts should never be used."
 
-## Become a member today!
+- Eward Tufte in *The Visual Display of Quantitative Information*, pg. 178
 
-<img src="/figure/card.png"/>
+
+## Get your membership card today!
+
+<img src="/figure/card.png" style="width:60%" />
 
 ## References
 
 1. Stephen Few, Perceptual Edge
 Visual Business Intelligence Newsletter, "[Save the Pies for Dessert](https://www.perceptualedge.com/articles/visual_business_intelligence/save_the_pies_for_dessert.pdf)"
+2.  Edward R. Tufte, "The visual display of quantitative information", Graphics Press Cheshire, CT, USA, 1986 
+ISBN:0-9613921-0-X
