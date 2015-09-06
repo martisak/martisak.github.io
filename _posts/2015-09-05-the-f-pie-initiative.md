@@ -9,7 +9,7 @@ Sometimes, when I come across a Powerpoint presentation with multiple multi-slic
 
 # Introducing The F Pie Initiative
 
-I am proud to present an intiative to end bad pie charts. Not all pie charts, just the bad ones.. which is most of them. Members in this elite club pledge to only make beatiful, easily interpretable graphs.
+I am proud to present an initiative to end bad pie charts. Not all pie charts, just the bad ones.. which is most of them. Members in this elite club pledge to only make beatiful, easily interpretable graphs.
 
 <img src="/figure/fpie.png"/>
 
