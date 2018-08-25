@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>Predicting strongest cell on secondary carrier using primary carrier data | Martin’s blog</title>
+<meta name="generator" content="Jekyll v3.7.3" />
+<meta property="og:title" content="Predicting strongest cell on secondary carrier using primary carrier data" />
+<meta name="author" content="H. Rydén, J. Berglund, M. Isaksson, F. Gunnarsson, R. Cöster." />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="There is a rapid evolution in telecommunication with denser networks and systems operating on an increasing number of frequency bands. Also in the next generation 5G networks, even further densification is needed to be able to reach the tight requirements, implying more nodes on each carrier. Denser networks and more frequencies makes it challenging to ensure the best possible cell and frequency carrier assignment to a User Equipment (UE), without the UE needing to perform an excessive amount of inter-frequency measurements and reporting. In this paper, we propose a procedure of predicting the strongest cell of a secondary carrier, and the procedure is exemplified in a UE load-balancing use case. The prediction is based on only measurements on the primary carrier cells, avoiding costly inter-frequency measurements. Simulations of a realistic network deployment show that a UE selection based on the proposed secondary carrier prediction is significantly better than a random UE selection for load balancing." />
+<meta property="og:description" content="There is a rapid evolution in telecommunication with denser networks and systems operating on an increasing number of frequency bands. Also in the next generation 5G networks, even further densification is needed to be able to reach the tight requirements, implying more nodes on each carrier. Denser networks and more frequencies makes it challenging to ensure the best possible cell and frequency carrier assignment to a User Equipment (UE), without the UE needing to perform an excessive amount of inter-frequency measurements and reporting. In this paper, we propose a procedure of predicting the strongest cell of a secondary carrier, and the procedure is exemplified in a UE load-balancing use case. The prediction is based on only measurements on the primary carrier cells, avoiding costly inter-frequency measurements. Simulations of a realistic network deployment show that a UE selection based on the proposed secondary carrier prediction is significantly better than a random UE selection for load balancing." />
+<link rel="canonical" href="http://localhost:4000/publications/scp.html" />
+<meta property="og:url" content="http://localhost:4000/publications/scp.html" />
+<meta property="og:site_name" content="Martin’s blog" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2018-04-01T00:00:00+02:00" />
+<script type="application/ld+json">
+{"mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/publications/scp.html"},"url":"http://localhost:4000/publications/scp.html","author":{"@type":"Person","name":"H. Rydén, J. Berglund, M. Isaksson, F. Gunnarsson, R. Cöster."},"description":"There is a rapid evolution in telecommunication with denser networks and systems operating on an increasing number of frequency bands. Also in the next generation 5G networks, even further densification is needed to be able to reach the tight requirements, implying more nodes on each carrier. Denser networks and more frequencies makes it challenging to ensure the best possible cell and frequency carrier assignment to a User Equipment (UE), without the UE needing to perform an excessive amount of inter-frequency measurements and reporting. In this paper, we propose a procedure of predicting the strongest cell of a secondary carrier, and the procedure is exemplified in a UE load-balancing use case. The prediction is based on only measurements on the primary carrier cells, avoiding costly inter-frequency measurements. Simulations of a realistic network deployment show that a UE selection based on the proposed secondary carrier prediction is significantly better than a random UE selection for load balancing.","@type":"BlogPosting","headline":"Predicting strongest cell on secondary carrier using primary carrier data","dateModified":"2018-04-01T00:00:00+02:00","datePublished":"2018-04-01T00:00:00+02:00","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Martin's blog" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Martin&#39;s blog</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/about/">About</a><a class="page-link" href="/">Home</a><a class="page-link" href="/publications.html">Publications</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Predicting strongest cell on secondary carrier using primary carrier data</h1>
+  </header>
+
+  <div class="post-content">
+    <div class="publication">
+  <p>H. Rydén, J. Berglund, M. Isaksson, F. Gunnarsson, R. Cöster.</p>
+  <p>2018 IEEE Wireless Communications and Networking Conference Workshops (WCNCW)<br>
+  April 2018</p>
+
+  <h2>Abstract</h2>
+  <div class="blog-post spacing">
+    <p>There is a rapid evolution in telecommunication with denser networks and systems operating on an increasing number of frequency bands. Also in the next generation 5G networks, even further densification is needed to be able to reach the tight requirements, implying more nodes on each carrier. Denser networks and more frequencies makes it challenging to ensure the best possible cell and frequency carrier assignment to a User Equipment (UE), without the UE needing to perform an excessive amount of inter-frequency measurements and reporting. In this paper, we propose a procedure of predicting the strongest cell of a secondary carrier, and the procedure is exemplified in a UE load-balancing use case. The prediction is based on only measurements on the primary carrier cells, avoiding costly inter-frequency measurements. Simulations of a realistic network deployment show that a UE selection based on the proposed secondary carrier prediction is significantly better than a random UE selection for load balancing.</p>
+
+
+  </div>
+
+  <h2>Bibtex</h2>
+  <!--<pre class="bibtex">@INPROCEEDINGS{8369000, 
+    author={H. Ryden and J. Berglund and M. Isaksson and R. Cöster and F. Gunnarsson}, 
+    booktitle={2018 IEEE Wireless Communications and Networking Conference Workshops (WCNCW)}, 
+    title={Predicting strongest cell on secondary carrier using primary carrier data}, 
+    year={2018}, 
+    volume={}, 
+    number={}, 
+    pages={137-142}, 
+    keywords={5G mobile communication;next generation networks;telecommunication traffic;primary carrier data;frequency bands;frequency carrier assignment;User Equipment;UE load-balancing use case;primary carrier cells;secondary carrier prediction;random UE selection;next generation 5G networks;inter-frequency measurements;Conferences;Frequency measurement;Load modeling;Timing;Urban areas;Self-organizing networks;Load management}, 
+    doi={10.1109/WCNCW.2018.8369000}, 
+    ISSN={}, 
+    month={April}
+}
+</pre>-->
+  
+<figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex">@INPROCEEDINGS{8369000, 
+    author={H. Ryden and J. Berglund and M. Isaksson and R. Cöster and F. Gunnarsson}, 
+    booktitle={2018 IEEE Wireless Communications and Networking Conference Workshops (WCNCW)}, 
+    title={Predicting strongest cell on secondary carrier using primary carrier data}, 
+    year={2018}, 
+    volume={}, 
+    number={}, 
+    pages={137-142}, 
+    keywords={5G mobile communication;next generation networks;telecommunication traffic;primary carrier data;frequency bands;frequency carrier assignment;User Equipment;UE load-balancing use case;primary carrier cells;secondary carrier prediction;random UE selection;next generation 5G networks;inter-frequency measurements;Conferences;Frequency measurement;Load modeling;Timing;Urban areas;Self-organizing networks;Load management}, 
+    doi={10.1109/WCNCW.2018.8369000}, 
+    ISSN={}, 
+    month={April}
+}</code></pre></figure>
+
+  <h2>Available</h2>
+  <a href="https://ieeexplore.ieee.org/abstract/document/8369000/">Predicting strongest cell on secondary carrier using primary carrier data</a>
+</div>
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Martin&#39;s blog</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Martin&#39;s blog</li><li><a class="u-email" href="mailto:martin@martisak.se">martin@martisak.se</a></li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/martisak"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">martisak</span></a></li><li><a href="https://www.linkedin.com/in/martisak"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#linkedin"></use></svg> <span class="username">martisak</span></a></li><li><a href="https://www.twitter.com/martin_isaksson"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">martin_isaksson</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>Researcher, PhD candidate, engineer</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
