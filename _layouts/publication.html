@@ -1,0 +1,20 @@
+---
+layout: page
+---
+
+<div class="publication">
+  <p>{{page.author}}</p>
+  <p>{{ page.in }}<br>
+  {{page.date | date: "%B %Y"}}</p>
+
+  <h2>Abstract</h2>
+  <div class="blog-post spacing">
+    {{ content }}
+  </div>
+
+  <h2>Bibtex</h2>
+  <!--<pre class="bibtex">{{- page.bibtex -}}</pre>-->
+  {% highlight bibtex %}{{page.bibtex}}{% endhighlight %}
+  <h2>Available</h2>
+  <a href="{{ page.online }}">{{page.title}}</a>
+</div>
