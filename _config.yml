@@ -28,7 +28,7 @@ theme: minima
 repository: martisak/martisak.github.io
 
 plugins:
-  - jekyll-feedxw
+  - jekyll-feed
   - github-pages
   - jekyll-avatar
   - jekyll/scholar
@@ -59,6 +59,7 @@ exclude:
    - package.json
    - '*.sublime-*'
    - Gruntfile.js
+   - Rakefile
 
 
 scholar:
