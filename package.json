@@ -1,0 +1,19 @@
+{
+    "name": "martin-blog",
+    "version": "0.0.1",
+    "description": "Dependencies of my blog",
+    "author": "Martin Isaksson",
+    "devDependencies": {
+        "grunt": "~1.0.3",
+        "grunt-autoprefixer": "~3.0.4",
+        "grunt-build-control": "~0.7.1",
+        "grunt-contrib-clean": "~1.1.0",
+        "grunt-jekyll": "~0.4.2"
+    },
+    "engines": {
+        "node": ">=0.10.0"
+    },
+    "dependencies": {
+        "jit-grunt": "^0.10.0"
+    }
+}

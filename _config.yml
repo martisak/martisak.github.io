@@ -55,6 +55,11 @@ exclude:
    - vendor/cache/
    - vendor/gems/
    - vendor/ruby/
+   - package-lock.json
+   - package.json
+   - '*.sublime-*'
+   - Gruntfile.js
+
 
 scholar:
   style: apa
