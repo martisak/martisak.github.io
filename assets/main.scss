@@ -1,0 +1,101 @@
+---
+---
+
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond:400i|Raleway:300,700|Source+Sans+Pro:300');
+@import "{{ site.theme }}";
+/*@import url('https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css');*/
+@import url('https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css');
+@import url('https://use.fontawesome.com/releases/v5.2.0/css/all.css');
+
+body {
+    font-family: 'Raleway',sans-serif;
+    font-weight: 300;
+}
+
+h1.post-title, h1, h2, h3 {
+    font-family: eb garamond,serif;
+    font-weight: 400;
+    font-style: italic;
+    -webkit-font-language-override: normal;
+    font-language-override: normal;
+    -webkit-font-kerning: auto;
+    font-kerning: auto;
+    -webkit-font-feature-settings: "kern","liga","dlig","hlig","cswh";
+    font-feature-settings: "kern","liga","dlig","hlig","cswh";
+    font-synthesis: weight style;
+}
+
+pre {
+    display: block;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    font-size: .8rem;
+    line-height: 1.4;
+    white-space: pre;
+    white-space: pre-wrap;
+    word-break: break-all;
+    word-wrap: break-word;
+    background-color: #f9f9f9 !important;
+    border-radius: 10px;
+    border: 0px;
+}
+
+pre, code {
+    font-size: 15px;
+    border: 0px solid #e8e8e8;
+    border-radius: 8px;
+    background-color: initial;
+    font-weight: 300;
+    font-family: 'Source Code Pro', monospace !important;
+
+}
+
+table {
+    font-size: .8em;
+}
+
+table th, table td, table  {
+    border: 0px;
+}
+
+table th, table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table th, table td {
+    padding: 3px 3px;
+}
+
+div.reading-time {
+    text-align:    center;
+    font-style: italic;
+    margin-bottom: 1em;
+}
+
+blockquote {
+    color: inherit;
+    border-left: 5px dotted #e8e8e8;
+    padding-left: 10px;
+    margin-left: 10px;
+    font-size: inherit;
+    letter-spacing: initial;
+    font-style: inherit;
+}
+
+.site-title {
+    font-size: inherit;
+}
+
+div.post {
+    margin-top: 50px;
+}
+
+.highlighter-rouge .highlight {
+    background: inherit;
+}
+
+.post-meta {
+    font-size: inherit;
+    color: inherit;
+}

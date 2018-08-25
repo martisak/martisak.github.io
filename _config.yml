@@ -1,22 +1,74 @@
-# Permalinks
+# Welcome to Jekyll!
 #
-# Use of `relative_permalinks` ensures post links from the index work properly.
-permalink:           pretty
-relative_permalinks: true
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 
-# Setup
-title:               Martin's blog
-tagline:             'I am what I am.'
-description:         'description goes here'
-url:                 http://martisak.github.io
-baseurl:             'http://martisak.github.io'
-paginate:            5
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: Martin's blog
+email: martin@martisak.se
+description: >- # this means to ignore newlines until "baseurl:"
+  Researcher, PhD candidate, engineer
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://blog.martisak.se" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: martin_isaksson
+github_username:  martisak
+linkedin_username: martisak
+# Build settings
+markdown: kramdown
+theme: minima
+repository: martisak/martisak.github.io
 
-# About/contact
-author:
-  name:              Martin Isaksson
-  url:               http://cv.martisak.se
-  email:             martin@martisak.se
+plugins:
+  - jekyll-feedxw
+  - github-pages
+  - jekyll-avatar
+  - jekyll/scholar
+  - jekyll-gist
+  - jekyll-paginate
+  - jekyll-email-protect
 
-# Custom vars
-version:             1.0.1
+#  - jekyll-remote-theme
+
+paginate: 5
+
+# remote_theme: benbalter/retlab
+
+# permalink: /blog/:year/:month/:day/:title/
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+exclude:
+   - Makefile
+   - Gemfile
+   - Gemfile.lock
+   - node_modules
+   - vendor/bundle/
+   - vendor/cache/
+   - vendor/gems/
+   - vendor/ruby/
+
+scholar:
+  style: apa
+  bibliography: "*.bib"
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "post"
+      excerpt_separator: <!--more-->
+
+collections:
+  publications:
+    output: True

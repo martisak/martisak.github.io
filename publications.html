@@ -1,0 +1,14 @@
+---
+layout: page
+title: Publications
+---
+{% assign sorted = site.publications | sort: 'date' | reverse %}
+{% for publication in sorted %}
+
+  <div class="publication">
+    <h2><a href="{{ publication.url }}">{{ publication.title }}</a></h2>
+    <p><b>{{ publication.author }}</b>, {{ publication.date | date: "%B %Y" }}</p>
+    <p>{{ publication.in }}</p>
+  </div>
+
+{% endfor %}
