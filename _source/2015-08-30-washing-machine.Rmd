@@ -2,6 +2,7 @@
 title:  "Washing apparatus ready detection (WARD)"
 date:   2015-08-30 21:53:48
 categories: R PocketLab
+layout: "post"
 ---
 
 

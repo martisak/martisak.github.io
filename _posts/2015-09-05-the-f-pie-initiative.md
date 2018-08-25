@@ -2,6 +2,7 @@
 title:  "The F Pie Initiative"
 date:   2015-09-05 21:00:00
 categories: visualization pie-charts
+layout: "post"
 ---
 
 Sometimes, when I come across a Powerpoint presentation with multiple multi-slice pie charts on a single slide my head hurts and I have to go air-poop for half-an-hour. Now I have decided to take action!
@@ -12,7 +13,7 @@ Sometimes, when I come across a Powerpoint presentation with multiple multi-slic
 
 I am proud to present an initiative to end bad pie charts. Not all pie charts, just the bad ones.. which is most of them. Members in this elite club pledge to only make beautiful, easily interpretable graphs.
 
-<img src="/images/fpie.png"/>
+<img src="/images/fpie.png" class="center-block" />
 
 ## So what's wrong with pie charts?
 
@@ -32,4 +33,4 @@ So can the pie chart be used for anything? Sure, pie charts can be effective in 
 
 Make the world a better place, become a member today!
 
-<img src="/images/card.png" style="width:60%" />
+<img src="/images/card.png" style="width:60%" class="center-block"/>

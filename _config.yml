@@ -35,8 +35,7 @@ plugins:
   - jekyll-gist
   - jekyll-paginate
   - jekyll-email-protect
-
-#  - jekyll-remote-theme
+  - jekyll-bootstrap-sass
 
 paginate: 5
 
@@ -67,7 +66,6 @@ scholar:
   bibliography: "*.bib"
 
 defaults:
-  -
     scope:
       path: ""
       type: "pages"
@@ -78,3 +76,4 @@ defaults:
 collections:
   publications:
     output: True
+

@@ -5,17 +5,15 @@ in: Exjobb - Institutionen för signaler och system, Chalmers tekniska högskola
 date: 2008-04-01
 online: http://studentarbeten.chalmers.se/publication/70865-vehicle-detection-using-anisotropic-magnetoresistors
 bibtex: |
-    @mastersthesis{
-        Isaksson2008,
-        author={Isaksson, Martin},
-        title={Vehicle detection using anisotropic magnetoresistors},
-        publisher={Institutionen för signaler och system, Chalmers tekniska högskola},
-        place={Göteborg},
-        year={2008},
-        series={Ex - Institutionen för signaler och system, Chalmers tekniska högskola, no: EX034/2008},
+    @mastersthesis{Isaksson2008,
+        author = {Isaksson, Martin},
+        publisher = {Institutionen f{\"{o}}r signaler och system, Chalmers tekniska h{\"{o}}gskola},
+        school = {Chalmers tekniska h{\"{o}}gskola},
+        series = {Ex - Institutionen f{\"{o}}r signaler och system, Chalmers tekniska h{\"{o}}gskola, no: EX034/2008},
+        title = {{Vehicle detection using anisotropic magnetoresistors}},
+        url = {http://studentarbeten.chalmers.se/publication/70865-vehicle-detection-using-anisotropic-magnetoresistors},
+        year = {2008}
     }
-
-
 layout: publication
 ---
 
