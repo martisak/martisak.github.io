@@ -36,6 +36,11 @@ plugins:
   - jekyll-paginate
   - jekyll-email-protect
   - jekyll-bootstrap-sass
+  - jekyll-plantuml
+
+graphviz:
+  options: "-Tsvg" # 'dot' command option
+  command: "dot"   # execute this string. specify full path to 'dot' if you need
 
 paginate: 5
 
@@ -59,11 +64,13 @@ exclude:
    - '*.sublime-*'
    - Gruntfile.js
    - Rakefile
+   - .gitlab-ci.yml
 
 
 scholar:
-  style: apa
+  style: apa-annotated-bibliography
   bibliography: "*.bib"
+  bibliography_template: bib
 
 defaults:
     scope:

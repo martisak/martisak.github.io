@@ -16,6 +16,9 @@ posts: $(MD_OBJECTS)
 check:
 	$(JEKYLL) doctor
 
+references:
+	git submodule update --recursive --remote
+
 install: $(PROJECT_DEPS)
 	$(BUNDLE) install
 

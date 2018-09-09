@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+
 <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
@@ -31,5 +32,14 @@ layout: default
 
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
 
-
+  <h2 id="citation">Suggested citation</h2>
+  <pre>
+    @misc{isaksson_{{ page.date | date: "%Y" }},
+      author="Isaksson, Martin",
+      title="{{ page.title}}",
+      year={{ page.date | date: "%Y" }},
+      journal="{{site.title}}",
+      howpublished={{site.url}}{{page.url}}
+    }
+  </pre>
 </article>

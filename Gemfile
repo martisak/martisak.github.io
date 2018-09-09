@@ -28,6 +28,8 @@ group :jekyll_plugins do
   gem 'jekyll-paginate'
   gem 'jekyll-email-protect'
   gem 'jekyll-bootstrap-sass'
+  gem 'jekyll-graphviz'
+  gem 'jekyll-plantuml'
 #  gem "jekyll-remote-theme"
 end
 

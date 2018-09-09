@@ -39,18 +39,19 @@ pre {
     white-space: pre-wrap;
     word-break: break-all;
     word-wrap: break-word;
-    background-color: #f9f9f9 !important;
+    /*background-color: #f9f9f9 !important;*/
     border-radius: 10px;
     border: 0px;
 }
 
 pre, code {
     font-size: 15px;
-    border: 0px solid #e8e8e8;
+    /*border: 0px solid #e8e8e8;*/
     border-radius: 8px;
     background-color: initial;
     font-weight: 300;
     font-family: 'Source Code Pro', monospace !important;
+    color: inherit;
 
 }
 
@@ -106,3 +107,61 @@ div.post {
 nav.site-nav label {
     display: initial;
 }
+
+.caption {
+    text-align: center;
+    font-size: 90%;
+    color: darkslategray;
+}
+
+.figure {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.footer-col-1 {
+    width: -webkit-calc(30% - (30px / 2));
+    width: calc(30% - (30px / 2));
+}
+
+.footer-col-2 {
+    width: -webkit-calc(25% - (30px / 2));
+    width: calc(25% - (30px / 2));
+}
+
+.svg-icon {
+    width: 22px !important;
+}
+
+.img-small {
+    width: 40%;
+}
+
+.pull-right {
+    float: right !important;
+    margin-left: 20px;
+}
+
+#myBtn {
+  opacity: 0;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+  -webkit-transition: all 600ms;
+  transition: all 600ms;
+
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+

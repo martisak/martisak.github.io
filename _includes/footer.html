@@ -1,3 +1,34 @@
+<button onclick="topFunction()" id="myBtn" title="Go to top">Back to the top</button>
+
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.opacity = 1;
+        document.getElementById("myBtn").style.bottom = "20px";
+    } else {
+        document.getElementById("myBtn").style.opacity = 0;
+        document.getElementById("myBtn").style.bottom = "-200px";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+
+  window.scroll({
+    top: 0,
+    left: 0,
+    behavior: 'smooth'
+  });
+
+  document.getElementById("myBtn").style.opacity = 0;
+
+}
+</script>
+
+
 <footer class="site-footer h-card">
   <data class="u-url" href="{{ "/" | relative_url }}"></data>
 
